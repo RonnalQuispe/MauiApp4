@@ -1,12 +1,16 @@
 using System;
 using Microsoft.Maui.Controls;
 
-namespace MauiApp4;
-
-public partial class AboutPage : ContentPage
+namespace MauiApp4
 {
-	public AboutPage()
-	{
-		InitializeComponent();
-	}
+    public partial class AboutPage : ContentPage
+    {
+        public AboutPage()
+        {
+            InitializeComponent();
+        }
+
+    }
 }
+
+
