@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp4.AboutPage">
+
+    <VerticalStackLayout Spacing="20" Padding="30" HorizontalOptions="Center" VerticalOptions="Center">
+
+
+        <Image Source="perro.jpg"
+               HeightRequest="180"
+               HorizontalOptions="Center"
+               SemanticProperties.Description="Imagen personalizada" />
+
+
+        <Label Text="Quispe Ronny"
+               FontSize="26"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center" />
+
+        <Label Text="el exito"
+               FontSize="22"
+               HorizontalTextAlignment="Center" />
+
+
+        <Label Text="Esta app fue desarrollada con .MUCHAS GANAS utilizando Fé y C#risto."
+               HorizontalTextAlignment="Center"
+               FontAttributes="Italic" />
+
+    </VerticalStackLayout>
+</ContentPage>

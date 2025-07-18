@@ -1,14 +1,22 @@
-﻿<?xml version = "1.0" encoding = "UTF-8" ?>
-<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:MauiApp4"
-             x:Class="MauiApp4.App">
-    <Application.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
-                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-    </Application.Resources>
-</Application>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiApp4.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiApp4"
+    Shell.FlyoutBehavior="Disabled"
+    Title="MauiApp4">
+
+    <TabBar>
+        <ShellContent
+            Title="App Apuntes Q.T.R.A"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Icon="{OnPlatform 'icon_notes.png', iOS='icon_notes_ios.png', MacCatalyst='icon_notes_ios.png'}" />
+
+        <ShellContent
+            Title="Acerca de"
+            ContentTemplate="{DataTemplate local:AboutPage}"
+            Icon="{OnPlatform 'icon_about.png', iOS='icon_about_ios.png', MacCatalyst='icon_about_ios.png'}" />
+    </TabBar>
+
+</Shell>
